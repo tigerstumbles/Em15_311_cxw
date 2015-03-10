@@ -18,3 +18,7 @@ D:\华师大\科目\大二上\C#\程序\130920\科学计算器2\科学计算器\
 D:\华师大\科目\大二上\C#\程序\130920\科学计算器2\科学计算器\科学计算器\obj\x86\Debug\科学计算器.Form1.resources
 D:\华师大\科目\大二上\C#\程序\130920\科学计算器2\科学计算器\科学计算器\obj\x86\Debug\科学计算器.Properties.Resources.resources
 D:\华师大\科目\大二上\C#\程序\130920\科学计算器2\科学计算器\科学计算器\obj\x86\Debug\科学计算器.csproj.GenerateResource.Cache
+D:\github\Embedded\科学计算器\科学计算器\obj\x86\Debug\Interop.MSScriptControl.dll
+D:\github\Embedded\科学计算器\科学计算器\obj\x86\Debug\科学计算器.csproj.ResolveComReference.cache
+D:\github\Embedded\科学计算器\科学计算器\obj\x86\Debug\科学计算器.exe
+D:\github\Embedded\科学计算器\科学计算器\obj\x86\Debug\科学计算器.pdb

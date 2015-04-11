@@ -1,0 +1,19 @@
+10:10:55.879 INFO  - Processing command line option -hwspec C:/Users/Administrator/project_7/project_7.sdk/SDK/SDK_Export/hw/system.xml. 
+10:18:15.777 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:18:15.877 INFO  - PS initialization will be done as it is not done before. 
+10:18:15.877 INFO  - Running PS initialization.... 
+10:18:16.184 INFO  - ps7_init is completed. 
+10:18:16.284 INFO  - PS Initialization is complete. 
+10:21:42.831 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:21:42.931 INFO  - PS initialization will be done as it is not done before. 
+10:21:42.931 INFO  - Running PS initialization.... 
+10:21:43.189 INFO  - ps7_init is completed. 
+10:21:43.289 INFO  - PS Initialization is complete. 
+10:23:14.696 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:23:14.796 INFO  - PS initialization will be done as it is not done before. 
+10:23:14.796 INFO  - Running PS initialization.... 
+10:23:15.083 INFO  - ps7_init is completed. 
+10:23:15.183 INFO  - PS Initialization is complete. 
+10:24:04.675 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:24:48.508 INFO  - Processor reset is completed for ps7_cortexa9_0 
+10:26:27.793 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

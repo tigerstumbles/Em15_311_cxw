@@ -1,0 +1,1346 @@
+10:12:06 **** Build of project mem_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:13:19 **** Build of configuration Debug for project mem_test ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test_bsp/ps7_cortexa9_0/lib -o "mem_test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test.elf  |tee "mem_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	mem_test.elf
+'Finished building: mem_test.elf.size'
+' '
+10:17:56 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:21:37 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:23:09 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:23:51 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:24:35 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:17:28 **** Auto Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+10:17:34 **** Auto Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:17:36 **** Auto Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+10:19:48 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project TestApp ****
+
+Nothing to build for project TestApp
+10:27:51 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -MT"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -o "src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o" "../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c"
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'getPS7MessageInfo':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:11:10: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:12:10: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:13:10: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:14:10: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:15:10: error: 'PS7_POLL_FAILED_PLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:58:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:118:26: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:143:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:146:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:148:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:240:18: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:276:23: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:364:16: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:365:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:366:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:438:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:442:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:471:14: error: 'OPCODE_EXIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:472:22: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:475:14: error: 'OPCODE_CLEAR' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:480:14: error: 'OPCODE_WRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:486:14: error: 'OPCODE_MASKWRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:493:14: error: 'OPCODE_MASKPOLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:499:30: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:505:14: error: 'OPCODE_MASKDELAY' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:508:13: warning: implicit declaration of function 'get_number_of_cycles_for_delay' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: warning: implicit declaration of function 'perf_reset_and_start_timer' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:514:22: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:521:36: error: 'ps7_mio_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:522:36: error: 'ps7_pll_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:523:38: error: 'ps7_clock_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:524:36: error: 'ps7_ddr_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:525:44: error: 'ps7_peripherals_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:533:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:534:25: error: 'ps7_post_config_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:535:18: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:536:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:537:25: error: 'ps7_post_config_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:540:25: error: 'ps7_post_config_3_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:554:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:555:25: error: 'ps7_mio_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:556:25: error: 'ps7_pll_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:557:27: error: 'ps7_clock_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:558:25: error: 'ps7_ddr_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:559:33: error: 'ps7_peripherals_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:562:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:563:25: error: 'ps7_mio_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:564:25: error: 'ps7_pll_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:565:27: error: 'ps7_clock_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:566:25: error: 'ps7_ddr_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:567:33: error: 'ps7_peripherals_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:581:14: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:595:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:599:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:601:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:605:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_start_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:622:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_reset_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: warning: implicit declaration of function 'perf_disable_clock' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:632:27: error: 'SCU_GLOBAL_TIMER_COUNT_L32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:633:27: error: 'SCU_GLOBAL_TIMER_COUNT_U32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:640:11: error: 'APU_FREQ' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:645:7: warning: conflicting types for 'perf_disable_clock' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: note: previous implicit declaration of 'perf_disable_clock' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_disable_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:647:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:650:6: warning: conflicting types for 'perf_reset_and_start_timer' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: note: previous implicit declaration of 'perf_reset_and_start_timer' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:642:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:612:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:544:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o] ´íÎó 1
+10:32:49 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -MT"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -o "src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o" "../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c"
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'getPS7MessageInfo':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:11:10: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:12:10: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:13:10: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:14:10: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:15:10: error: 'PS7_POLL_FAILED_PLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:58:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:118:26: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:143:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:146:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:148:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:240:18: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:276:23: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:364:16: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:365:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:366:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:438:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:442:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:471:14: error: 'OPCODE_EXIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:472:22: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:475:14: error: 'OPCODE_CLEAR' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:480:14: error: 'OPCODE_WRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:486:14: error: 'OPCODE_MASKWRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:493:14: error: 'OPCODE_MASKPOLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:499:30: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:505:14: error: 'OPCODE_MASKDELAY' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:508:13: warning: implicit declaration of function 'get_number_of_cycles_for_delay' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: warning: implicit declaration of function 'perf_reset_and_start_timer' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:514:22: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:521:36: error: 'ps7_mio_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:522:36: error: 'ps7_pll_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:523:38: error: 'ps7_clock_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:524:36: error: 'ps7_ddr_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:525:44: error: 'ps7_peripherals_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:533:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:534:25: error: 'ps7_post_config_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:535:18: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:536:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:537:25: error: 'ps7_post_config_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:540:25: error: 'ps7_post_config_3_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:554:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:555:25: error: 'ps7_mio_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:556:25: error: 'ps7_pll_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:557:27: error: 'ps7_clock_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:558:25: error: 'ps7_ddr_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:559:33: error: 'ps7_peripherals_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:562:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:563:25: error: 'ps7_mio_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:564:25: error: 'ps7_pll_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:565:27: error: 'ps7_clock_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:566:25: error: 'ps7_ddr_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:567:33: error: 'ps7_peripherals_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:581:14: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:595:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:599:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:601:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:605:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_start_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:622:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_reset_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: warning: implicit declaration of function 'perf_disable_clock' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:632:27: error: 'SCU_GLOBAL_TIMER_COUNT_L32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:633:27: error: 'SCU_GLOBAL_TIMER_COUNT_U32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:640:11: error: 'APU_FREQ' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:645:7: warning: conflicting types for 'perf_disable_clock' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: note: previous implicit declaration of 'perf_disable_clock' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_disable_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:647:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:650:6: warning: conflicting types for 'perf_reset_and_start_timer' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: note: previous implicit declaration of 'perf_reset_and_start_timer' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:642:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:612:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:544:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o] ´íÎó 1
+10:36:34 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -MT"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -o "src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o" "../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c"
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'getPS7MessageInfo':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:11:10: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:12:10: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:13:10: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:14:10: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:15:10: error: 'PS7_POLL_FAILED_PLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:58:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:118:26: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:143:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:146:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:148:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:240:18: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:276:23: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:364:16: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:365:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:366:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:438:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:442:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:471:14: error: 'OPCODE_EXIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:472:22: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:475:14: error: 'OPCODE_CLEAR' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:480:14: error: 'OPCODE_WRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:486:14: error: 'OPCODE_MASKWRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:493:14: error: 'OPCODE_MASKPOLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:499:30: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:505:14: error: 'OPCODE_MASKDELAY' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:508:13: warning: implicit declaration of function 'get_number_of_cycles_for_delay' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: warning: implicit declaration of function 'perf_reset_and_start_timer' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:514:22: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:521:36: error: 'ps7_mio_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:522:36: error: 'ps7_pll_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:523:38: error: 'ps7_clock_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:524:36: error: 'ps7_ddr_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:525:44: error: 'ps7_peripherals_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:533:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:534:25: error: 'ps7_post_config_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:535:18: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:536:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:537:25: error: 'ps7_post_config_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:540:25: error: 'ps7_post_config_3_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:554:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:555:25: error: 'ps7_mio_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:556:25: error: 'ps7_pll_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:557:27: error: 'ps7_clock_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:558:25: error: 'ps7_ddr_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:559:33: error: 'ps7_peripherals_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:562:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:563:25: error: 'ps7_mio_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:564:25: error: 'ps7_pll_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:565:27: error: 'ps7_clock_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:566:25: error: 'ps7_ddr_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:567:33: error: 'ps7_peripherals_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:581:14: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:595:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:599:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:601:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:605:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_start_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:622:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_reset_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: warning: implicit declaration of function 'perf_disable_clock' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:632:27: error: 'SCU_GLOBAL_TIMER_COUNT_L32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:633:27: error: 'SCU_GLOBAL_TIMER_COUNT_U32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:640:11: error: 'APU_FREQ' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:645:7: warning: conflicting types for 'perf_disable_clock' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: note: previous implicit declaration of 'perf_disable_clock' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_disable_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:647:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:650:6: warning: conflicting types for 'perf_reset_and_start_timer' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: note: previous implicit declaration of 'perf_reset_and_start_timer' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:642:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:612:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:544:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o] ´íÎó 1
+10:41:20 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -MT"src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.d" -o "src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o" "../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c"
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'getPS7MessageInfo':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:10:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:11:10: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:12:10: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:13:10: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:14:10: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:15:10: error: 'PS7_POLL_FAILED_PLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:58:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:118:26: error: 'PS7_POLL_FAILED_DMA' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:143:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:146:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:148:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:240:18: error: 'PS7_POLL_FAILED_DDR_INIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:276:23: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:364:16: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:365:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:366:15: error: expected expression before '%' token
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:438:16: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:442:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:471:14: error: 'OPCODE_EXIT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:472:22: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:475:14: error: 'OPCODE_CLEAR' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:480:14: error: 'OPCODE_WRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:486:14: error: 'OPCODE_MASKWRITE' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:493:14: error: 'OPCODE_MASKPOLL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:499:30: error: 'PS7_INIT_TIMEOUT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:505:14: error: 'OPCODE_MASKDELAY' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:508:13: warning: implicit declaration of function 'get_number_of_cycles_for_delay' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: warning: implicit declaration of function 'perf_reset_and_start_timer' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:514:22: error: 'PS7_INIT_CORRUPT' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:521:36: error: 'ps7_mio_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:522:36: error: 'ps7_pll_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:523:38: error: 'ps7_clock_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:524:36: error: 'ps7_ddr_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:525:44: error: 'ps7_peripherals_init_data_3_0' undeclared here (not in a function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:533:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:534:25: error: 'ps7_post_config_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:535:18: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:536:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:537:25: error: 'ps7_post_config_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:540:25: error: 'ps7_post_config_3_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:554:17: error: 'PCW_SILICON_VERSION_1' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:555:25: error: 'ps7_mio_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:556:25: error: 'ps7_pll_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:557:27: error: 'ps7_clock_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:558:25: error: 'ps7_ddr_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:559:33: error: 'ps7_peripherals_init_data_1_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:562:24: error: 'PCW_SILICON_VERSION_2' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:563:25: error: 'ps7_mio_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:564:25: error: 'ps7_pll_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:565:27: error: 'ps7_clock_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:566:25: error: 'ps7_ddr_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:567:33: error: 'ps7_peripherals_init_data_2_0' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:581:14: error: 'PS7_INIT_SUCCESS' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:595:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:599:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:601:3: error: invalid preprocessing directive #TAG_START
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:605:3: error: invalid preprocessing directive #TAG_END
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_start_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:622:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_reset_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: warning: implicit declaration of function 'perf_disable_clock' [-Wimplicit-function-declaration]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:632:27: error: 'SCU_GLOBAL_TIMER_COUNT_L32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:633:27: error: 'SCU_GLOBAL_TIMER_COUNT_U32' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:640:11: error: 'APU_FREQ' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:645:7: warning: conflicting types for 'perf_disable_clock' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:631:2: note: previous implicit declaration of 'perf_disable_clock' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'perf_disable_clock':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:647:27: error: 'SCU_GLOBAL_TIMER_CONTROL' undeclared (first use in this function)
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: At top level:
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:650:6: warning: conflicting types for 'perf_reset_and_start_timer' [enabled by default]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:509:13: note: previous implicit declaration of 'perf_reset_and_start_timer' was here
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'get_number_of_cycles_for_delay':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:642:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:612:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_post_config':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:544:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_lpddr2_manual_traing_workaround':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:441:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c: In function 'ps7_ddr_ecc_init':
+../src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/lab2.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/data/zynqconfig/code/ps7_init.o] ´íÎó 1
+
+**** Build of configuration Debug for project TestApp ****
+
+Nothing to build for project TestApp
+10:44:30 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23820	   1136	  22628	  47584	   b9e0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:49:11 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:50:38 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:51:13 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:52:43 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:53:55 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:54:27 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:56:03 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:58:37 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:00:53 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:02:49 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:03:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:05:32 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:06:27 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:08:00 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:08:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:09:32 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:10:56 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:14:57 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:18:09 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:18:30 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:18:44 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:19:21 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:21:06 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:22:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:23:23 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:32:27 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:33:20 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:35:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:25:33 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:25:37 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:26:51 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:29:39 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:33:43 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:34:51 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:34:54 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:36:04 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:36:11 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:36:16 **** Clean-only build of configuration Debug for project TestApp ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  TestApp.elf.size  TestApp.elf
+' '
+10:36:17 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:37:16 **** Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23820	   1136	  22628	  47584	   b9e0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:47:37 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:50:05 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:53:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:53:50 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:53:57 **** Clean-only build of configuration Debug for project TestApp ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  TestApp.elf.size  TestApp.elf
+' '
+10:53:58 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:54:02 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:56:10 **** Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23820	   1136	  22628	  47584	   b9e0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:57:50 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:59:19 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:00:30 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:01:28 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:02:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:04:05 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:05:36 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+18:41:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:41:52 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+18:41:54 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:42:12 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling bram"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+18:43:20 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+18:43:24 **** Clean-only build of configuration Debug for project TestApp ****
+make clean 
+rm -rf  ./src/lab2.o  ./src/lab2.d  TestApp.elf.size  TestApp.elf
+' '
+18:43:25 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling bram"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+18:44:07 **** Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23820	   1136	  22628	  47584	   b9e0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+
+**** Build of configuration Debug for project lab4 ****
+
+Nothing to build for project lab4
+19:01:12 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:15:27: error: 'XPAR_DIP_DEVICE_ID' undeclared (first use in this function)
+../src/lab4.c:15:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab4.c:18:28: error: 'XPAR_PUSH_DEVICE_ID' undeclared (first use in this function)
+make: *** [src/lab4.o] ´íÎó 1
+19:14:35 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23820	   1136	  22628	  47584	   b9e0	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+19:17:00 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+19:17:05 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp C:/Users/Administrator/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+C:/Users/Administrator/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0
+-pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling bram"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:17:54 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:22:53 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+19:22:56 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       -lp C:/Users/Administrator/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0\
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -lp
+C:/Users/Administrator/led_ip/led_ip_1.0 -lp ..\..\..\..\..\led_ip\led_ip_1.0
+-pe ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling bram"
+"Compiling gpio"
+"Compiling led_ip..."
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:23:34 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:33:37 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23840	   1136	  22628	  47604	   b9f4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+19:45:59 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:48:47 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:49:37 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:50:42 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+19:52:10 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+19:52:11 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23840	   1136	   8292	  33268	   81f4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+19:58:02 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:28:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/lab4.c:28:4: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2013.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.7.3/../../../../arm-xilinx-eabi/bin/ld.exe: lab4.elf section `.text' will not fit in region `axi_bram_ctrl_0_S_AXI_BASEADDR'
+c:/xilinx/sdk/2013.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.7.3/../../../../arm-xilinx-eabi/bin/ld.exe: region `axi_bram_ctrl_0_S_AXI_BASEADDR' overflowed by 37740 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] ´íÎó 1
+20:02:32 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23840	   1136	   8292	  33268	   81f4	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+20:03:26 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:28:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/lab4.c:28:4: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2013.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.7.3/../../../../arm-xilinx-eabi/bin/ld.exe: lab4.elf section `.text' will not fit in region `axi_bram_ctrl_0_S_AXI_BASEADDR'
+c:/xilinx/sdk/2013.4/gnu/arm/nt/bin/../lib/gcc/arm-xilinx-eabi/4.7.3/../../../../arm-xilinx-eabi/bin/ld.exe: region `axi_bram_ctrl_0_S_AXI_BASEADDR' overflowed by 37740 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab4.elf] ´íÎó 1
+20:04:13 **** Clean-only build of configuration Debug for project lab4 ****
+make clean 
+rm -rf  ./src/lab4.o  ./src/lab4.d  lab4.elf.size  lab4.elf
+' '
+20:04:14 **** Auto Build of configuration Debug for project lab4 ****
+make all 
+'Building file: ../src/lab4.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab4.d" -MT"src/lab4.d" -o "src/lab4.o" "../src/lab4.c"
+../src/lab4.c: In function 'main':
+../src/lab4.c:28:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/lab4.c:28:4: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/lab4.c'
+' '
+'Building target: lab4.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab4.elf"  ./src/lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab4.elf  |tee "lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63164	   2304	   8356	  73824	  12060	lab4.elf
+'Finished building: lab4.elf.size'
+' '
+20:04:46 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+20:05:23 **** Incremental Build of configuration Debug for project lab4 ****
+make all 
+make: Nothing to be done for `all'.
+
+**** Build of configuration Debug for project lab5 ****
+
+Nothing to build for project lab5
+11:07:23 **** Auto Build of configuration Debug for project lab5 ****
+make all 
+'Building file: ../src/lab5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab5.d" -MT"src/lab5.d" -o "src/lab5.o" "../src/lab5.c"
+../src/lab5.c:8:1: error: unknown type name 'XScuTimer'
+../src/lab5.c: In function 'main':
+../src/lab5.c:19:4: error: unknown type name 'XScuTimer_Config'
+../src/lab5.c:20:4: error: unknown type name 'XScuTimer'
+../src/lab5.c:24:27: error: 'XPAR_SW_8BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab5.c:24:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab5.c:27:28: error: 'XPAR_BTNS_5BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab5.c:48:5: warning: implicit declaration of function 'XScuTimer_Stop' [-Wimplicit-function-declaration]
+../src/lab5.c:59:4: warning: implicit declaration of function 'XScuTimer_IsExpired' [-Wimplicit-function-declaration]
+../src/lab5.c:19:22: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+../src/lab5.c:16:53: warning: unused variable 'Status' [-Wunused-variable]
+../src/lab5.c:16:46: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+make: *** [src/lab5.o] ´íÎó 1
+11:10:35 **** Auto Build of configuration Debug for project lab5 ****
+make all 
+'Building file: ../src/lab5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab5.d" -MT"src/lab5.d" -o "src/lab5.o" "../src/lab5.c"
+../src/lab5.c: In function 'main':
+../src/lab5.c:26:27: error: 'XPAR_SW_8BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab5.c:26:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab5.c:29:28: error: 'XPAR_BTNS_5BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab5.c:21:22: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+../src/lab5.c:18:53: warning: unused variable 'Status' [-Wunused-variable]
+../src/lab5.c:18:46: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+make: *** [src/lab5.o] ´íÎó 1
+11:27:13 **** Auto Build of configuration Debug for project lab5 ****
+make all 
+'Building file: ../src/lab5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab5.d" -MT"src/lab5.d" -o "src/lab5.o" "../src/lab5.c"
+'Finished building: ../src/lab5.c'
+' '
+'Building target: lab5.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "lab5.elf"  ./src/lab5.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab5.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size lab5.elf  |tee "lab5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24980	   1144	  22644	  48768	   be80	lab5.elf
+'Finished building: lab5.elf.size'
+' '
+11:28:48 **** Incremental Build of configuration Debug for project lab5 ****
+make all 
+make: Nothing to be done for `all'.
+20:09:59 **** Incremental Build of configuration Debug for project lab5 ****
+make all 
+make: Nothing to be done for `all'.
+20:21:25 **** Incremental Build of configuration Debug for project lab5 ****
+make all 
+make: Nothing to be done for `all'.
+20:24:05 **** Incremental Build of configuration Debug for project lab5 ****
+make all 
+make: Nothing to be done for `all'.

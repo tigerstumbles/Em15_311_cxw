@@ -8,3 +8,4 @@
 “Push Buttons Status C”与“DIP Switch Status 2”
 
 同时开关上方的4个LED灯也会随着开关状态的变化相应亮暗。比如当推上最左和最右的两个开关时，最左边和最右边的两个LED变亮，中间两个则是暗的。
+

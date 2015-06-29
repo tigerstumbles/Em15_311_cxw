@@ -3,3 +3,4 @@
 
 如当推上右数第二个开关且按下左边两个按钮时，会显示
 “Push Buttons Status C”与“DIP Switch Status 2”
+

@@ -1,0 +1,41 @@
+
+#include "xparameters.h"
+#include "i2c.h"
+
+#define	Tmp2IICAddr	0x4B
+
+//#define	Tmp3IICAddr	0x48
+#define	TmpDataReg	0x0
+#define	TmpDataLReg	0x1
+//#define	TmpCfgReg	0x1
+
+#define I2C_BASEADDR XPAR_AXI_IIC_0_BASEADDR
+
+/*void	tmp3_init()
+{
+	unsigned	char	txBuffer[3];
+	txBuffer[0] = 0x60;
+	I2C_Write(I2C_BASEADDR,Tmp2IICAddr,TmpCfgReg,1, txBuffer);
+}*/
+
+int	Read_TMP(int print)
+{
+	unsigned	char	rxBuffer[2];
+	unsigned	int	data;
+	I2C_Read(I2C_BASEADDR,Tmp2IICAddr,TmpDataReg,1,rxBuffer);
+	data=rxBuffer[0];
+	I2C_Read(I2C_BASEADDR,Tmp2IICAddr,TmpDataLReg,1,rxBuffer);
+	data=data<<8|rxBuffer[0];
+	float tmp=(data>>3)*0.0625;
+	if(print)
+		xil_printf("Temperature is:%5d + %5d/256 C\r",rxBuffer[0],rxBuffer[1]);
+	return	(rxBuffer[0]<<8|rxBuffer[1]);
+}
+
+void	main_tmp()
+{
+//	tmp3_init();
+	xil_printf("\r\nPmodTMP2 Demo:\r\n");
+	while(1)
+		Read_TMP(1);
+}

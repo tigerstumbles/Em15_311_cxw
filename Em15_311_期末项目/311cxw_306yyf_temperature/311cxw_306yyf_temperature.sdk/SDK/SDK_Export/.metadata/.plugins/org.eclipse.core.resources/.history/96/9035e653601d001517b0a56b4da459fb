@@ -1,0 +1,249 @@
+
+#include <stdio.h>
+#include "xgpio_l.h"
+#include "xparameters.h"
+#include "xgpio.h"
+
+#define INIT_DELAY 10000 //usec delay timer during initialization, important to change if clock speed changes
+#define INST_DELAY 1000 //usec delay timer between instructions
+#define DATA_DELAY 1000 //usec delay timer between data
+
+#define	GPIO_LCD_DEVICE	XPAR_LCD_11BIT_DEVICE_ID
+
+XGpio GpioOutputleds;
+
+//the unit of count is ms
+void delay(unsigned int count)
+{
+		unsigned int a,b;
+		for(a=0; a<count; a++)
+			for(b=0; b<120; b++);
+}
+
+void LCD_Init(void)
+{
+	dalay(15);
+	LCD_Write_Command(0x38);
+	delay(5);
+	LCD_Write_Command(0x38)
+
+
+}
+
+void LCD_Write_Command(unsigned long comm)
+{
+
+	XGpio_DiscreteWrite(&GpioOutputleds, 1,(d_e<<10)|(d_rw<<9)|(d_rs<<8)|d_dat);
+
+}
+
+void LCD_Write_Data(unsigned long data)
+{
+
+
+
+}
+
+void LCD_
+
+
+
+
+
+
+
+void XromWriteData(unsigned long data)
+{
+	unsigned long rs_data, enable_rs_data;
+	//bool busy=true;	
+	rs_data = 0x00000200 | data; 
+	enable_rs_data = 0x00000600 | data;
+	auto_lcd_write(rs_data);
+	usleep(10);
+	auto_lcd_write(enable_rs_data);
+	usleep(10);
+	auto_lcd_write(rs_data);
+	usleep(10);
+	usleep(DATA_DELAY);
+}
+
+void XromMoveCursorHome()
+{
+	XromWriteInst(0x00000002);
+}
+
+void XromMoveCursorLeft()
+{
+	XromWriteInst(0x00000010);
+}
+
+void XromMoveCursorRight()
+{
+	XromWriteInst(0x00000014);
+}
+
+void XromLCDOn()
+{
+	XromWriteInst(0x0000000E);  
+}
+
+void XromLCDOff()
+{
+	XromWriteInst(0x00000008);
+}
+
+void XromLCDClear()
+{
+	XromWriteInst(0x00000001);
+	XromWriteInst(0x00000002);
+}
+
+void XromLCDInit()
+{
+	//LCD INIT
+		usleep(15000);	//After VCC>4.5V Wait 15ms to Init Char LCD
+		XromInitInst();
+		usleep(4100); //Wait 4.1ms
+		XromInitInst();
+		usleep(100); //Wait 100us
+		XromInitInst();
+		XromInitInst();
+	//Function Set
+		XromWriteInst(0x00000038); // 28?
+	//Display Off
+		XromWriteInst(0x00000008);
+	//Display Clear
+		XromWriteInst(0x00000001);
+	//Entry Mode Set
+		XromWriteInst(0x00000006);	
+	//Display On
+		XromWriteInst(0x0000000E);
+}
+
+
+void XromLCDSetLine(int line)
+{ //line1 = 1, line2 = 2
+	int i;
+	if((line - 1)) {
+		XromMoveCursorHome();
+		for(i=0; i<40; i++)
+			XromMoveCursorRight();
+	}
+	else
+		XromMoveCursorHome();
+}
+
+void XromLCDPrintChar(char c)
+{
+	XromWriteData(c);
+}
+
+void XromLCDPrintString(char * line)
+{
+	int i=0;
+	for(i=0; i<16; i++)
+	{
+		if(line[i])
+			XromLCDPrintChar(line[i]);
+		else
+			break;
+	}
+	return;
+}
+
+void XromLCDPrint2Strings(char * line1, char * line2)
+{
+	int i=0;
+		XromLCDSetLine(1);
+		for(i=0; i<16; i++){
+			if(line1[i])
+				XromLCDPrintChar(line1[i]);
+			else break;
+		}	
+		XromLCDSetLine(2);
+		for(i=0; i<16; i++){
+			if(line2[i])
+				XromLCDPrintChar(line2[i]);
+			else break;
+		}	
+	return;
+}
+
+////////////////////////////////////////////////////////////////
+// LogNum:  Converts number to character                    //
+////////////////////////////////////////////////////////////////
+void XromLCDPrintNum(unsigned int x, unsigned int base)
+{
+  static char hex[]="0123456789ABCDEF";
+  char digit[10];
+  int i;
+  i = 0;
+  do
+  {
+    digit[i] = hex[x % base];
+    x = x / base;
+    i++;
+  } while (x != 0);
+  while (i > 0)
+  {
+  	i--;
+    XromLCDPrintChar(digit[i]);
+  }
+}
+
+///////////////////////////////////////////////////////////////
+// WriteInt:  handles the negative case, calls LogNum   //
+//                w/ unsigned value                         //
+//////////////////////////////////////////////////////////////
+void XromLCDPrintInt(unsigned int x)
+{
+  unsigned int val;
+  if (x < 0)
+  {
+    XromLCDPrintChar('-');
+    val = ((unsigned int) ~x ) + 1;
+  }
+  else
+    val = (unsigned int) x;
+  XromLCDPrintNum(val, 10);
+}
+
+void	main()
+{
+	XGpio_Initialize(&GpioOutputleds,GPIO_LCD_DEVICE);//XPAR_LEDS_8BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&GpioOutputleds, 1, 0x0);
+
+	xil_printf("\r\nLCD Test\r\n");
+	xil_printf("========\r\n");
+	XromLCDInit();
+	XromLCDOn();
+	XromLCDClear();
+	XromLCDPrintString("PmodCLP Test");
+	XromLCDPrintChar(':');
+
+	int i,data;
+	i=1;
+	while(1)
+	{
+		XromLCDSetLine(2);
+		XromLCDPrintString("No.");
+		XromLCDPrintInt(i);
+		XromLCDPrintChar(':');
+
+		data=tmp2_textout(1);
+		XromLCDPrintInt(data>>8);
+		XromLCDPrintChar('+');
+		XromLCDPrintInt(data&0xff);
+		XromLCDPrintChar('/');
+		XromLCDPrintInt(256);
+		XromLCDPrintString("   ");
+
+		if(i==9)
+			i=1;
+		else
+			i++;
+		XromLCDSetLine(1);
+		usleep(250000);
+	}
+	exit(0);	
+}  

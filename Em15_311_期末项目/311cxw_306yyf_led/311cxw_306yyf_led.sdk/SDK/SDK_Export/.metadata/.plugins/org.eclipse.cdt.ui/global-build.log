@@ -1,0 +1,1741 @@
+13:20:36 **** Build of project mem_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+13:20:56 **** Build of configuration Debug for project mem_test ****
+make all 
+'Building file: ../src/memory_config_g.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+'Finished building: ../src/memory_config_g.c'
+' '
+'Building file: ../src/memorytest.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+'Finished building: ../src/memorytest.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mem_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_test.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_test_bsp/ps7_cortexa9_0/lib -o "mem_test.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_test.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mem_test.elf  |tee "mem_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26136	   1136	  14436	  41708	   a2ec	mem_test.elf
+'Finished building: mem_test.elf.size'
+' '
+13:23:06 **** Incremental Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:42:46 **** Auto Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+10:42:53 **** Auto Build of configuration Debug for project mem_test ****
+make all 
+make: Nothing to be done for `all'.
+10:43:01 **** Clean-only build of configuration Debug for project mem_test ****
+make clean 
+rm -rf  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o  ./src/memory_config_g.d ./src/memorytest.d ./src/platform.d  mem_test.elf.size  mem_test.elf
+' '
+10:43:02 **** Clean-only build of project mem_test_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:43:03 **** Build of project mem_test_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:44:06 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project TestApp ****
+
+Nothing to build for project TestApp
+10:45:17 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:16:28: error: 'XPAR_SW_4BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab2.c:16:28: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:19:26: error: 'XPAR_BTNS_4BIT_DEVICE_ID' undeclared (first use in this function)
+make: *** [src/lab2.o] ´íÎó 1
+10:45:40 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:16:28: error: 'XPAR_SW_4BIT_DEVICE_ID' undeclared (first use in this function)
+../src/lab2.c:16:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab2.o] ´íÎó 1
+10:46:11 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:16:23: error: 'dip' undeclared (first use in this function)
+../src/lab2.c:16:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:4: error: 'dip_check' undeclared (first use in this function)
+../src/lab2.c:12:20: warning: unused variable 'led_check' [-Wunused-variable]
+../src/lab2.c:11:11: warning: unused variable 'led' [-Wunused-variable]
+make: *** [src/lab2.o] ´íÎó 1
+10:46:30 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:16:23: error: 'dip' undeclared (first use in this function)
+../src/lab2.c:16:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:4: error: 'dip_check' undeclared (first use in this function)
+../src/lab2.c:12:20: warning: unused variable 'led_check' [-Wunused-variable]
+../src/lab2.c:11:11: warning: unused variable 'led' [-Wunused-variable]
+make: *** [src/lab2.o] ´íÎó 1
+10:46:41 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:17:26: error: 'dip' undeclared (first use in this function)
+../src/lab2.c:17:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:4: error: 'dip_check' undeclared (first use in this function)
+../src/lab2.c:12:20: warning: unused variable 'led_check' [-Wunused-variable]
+make: *** [src/lab2.o] ´íÎó 1
+10:46:46 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:26:4: error: 'dip_check' undeclared (first use in this function)
+../src/lab2.c:26:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:26:36: error: 'dip' undeclared (first use in this function)
+../src/lab2.c:12:20: warning: unused variable 'led_check' [-Wunused-variable]
+make: *** [src/lab2.o] ´íÎó 1
+10:47:43 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:12:20: warning: unused variable 'led_check' [-Wunused-variable]
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23788	   1136	  22628	  47552	   b9c0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:47:52 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23788	   1136	  22628	  47552	   b9c0	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:49:23 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:50:46 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23852	   1136	  22628	  47616	   ba00	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:51:45 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:51:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:52:18 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:55:20 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:56:11 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23916	   1136	  22628	  47680	   ba40	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+10:57:13 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:57:14 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:57:47 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:02:02 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:07:36 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:08:06 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+11:08:07 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:08:46 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+15:20:12 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+15:20:51 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+15:20:53 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+15:21:26 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+15:31:21 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+15:31:24 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:57:03 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+09:57:58 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+09:57:59 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:58:36 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+10:29:18 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:16:15 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:29:46: error: 'dat' undeclared (first use in this function)
+../src/lab2.c:29:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:30:21: error: 'Delay' undeclared (first use in this function)
+../src/lab2.c:30:40: error: 'LED_DELAY' undeclared (first use in this function)
+../src/lab2.c: At top level:
+../src/lab2.c:55:1: error: expected identifier or '(' before '.' token
+make: *** [src/lab2.o] ´íÎó 1
+11:28:49 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:29:36 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:29:46: error: 'dat' undeclared (first use in this function)
+../src/lab2.c:29:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:30:21: error: 'Delay' undeclared (first use in this function)
+../src/lab2.c:30:40: error: 'LED_DELAY' undeclared (first use in this function)
+../src/lab2.c: At top level:
+../src/lab2.c:55:1: error: expected identifier or '(' before '.' token
+make: *** [src/lab2.o] ´íÎó 1
+11:29:39 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+11:30:10 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:29:46: error: 'dat' undeclared (first use in this function)
+../src/lab2.c:29:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c:30:21: error: 'Delay' undeclared (first use in this function)
+../src/lab2.c:30:40: error: 'LED_DELAY' undeclared (first use in this function)
+../src/lab2.c: At top level:
+../src/lab2.c:55:1: error: expected identifier or '(' before '.' token
+make: *** [src/lab2.o] ´íÎó 1
+11:31:06 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c: In function 'main':
+../src/lab2.c:32:40: error: 'LED_DELAY' undeclared (first use in this function)
+../src/lab2.c:32:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2.c: At top level:
+../src/lab2.c:57:1: error: expected identifier or '(' before '.' token
+make: *** [src/lab2.o] ´íÎó 1
+11:31:21 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+../src/lab2.c:59:1: error: expected identifier or '(' before '.' token
+make: *** [src/lab2.o] ´íÎó 1
+11:31:35 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23844	   1136	  22628	  47608	   b9f8	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+11:32:40 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:37:57 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:40:10 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23800	   1136	  22628	  47564	   b9cc	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+11:40:16 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:40:39 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+11:43:29 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building file: ../src/lab2.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2.d" -MT"src/lab2.d" -o "src/lab2.o" "../src/lab2.c"
+'Finished building: ../src/lab2.c'
+' '
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23844	   1136	  22628	  47608	   b9f8	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+11:43:44 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+18:59:04 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:59:09 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:59:14 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+'Building target: TestApp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "TestApp.elf"  ./src/lab2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestApp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size TestApp.elf  |tee "TestApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23844	   1136	  22628	  47608	   b9f8	TestApp.elf
+'Finished building: TestApp.elf.size'
+' '
+19:02:46 **** Incremental Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+19:06:53 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:08:19 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+19:08:20 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+19:08:23 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+19:09:42 **** Auto Build of configuration Debug for project TestApp ****
+make all 
+make: Nothing to be done for `all'.
+19:16:36 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project cxw ****
+
+Nothing to build for project cxw
+19:18:58 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+D:\solution\finalproject1\finalproject1.sdk\SDK\SDK_Export\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil-crt0.S:149: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [cxw.elf] ´íÎó 1
+19:19:16 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23844	   1136	  22628	  47608	   b9f8	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+19:20:14 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+19:22:39 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:24:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:23:15: warning: unused variable 'Delay' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23924	   1136	  22628	  47688	   ba48	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+19:23:33 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:02:51 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:02:54 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:02:56 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:03:02 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:04:36 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:05:10 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project cxw ****
+
+Nothing to build for project cxw
+10:07:29 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil-crt0.S:149: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [cxw.elf] ´íÎó 1
+10:08:05 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23960	   1152	  22628	  47740	   ba7c	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:08:44 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:11:15 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:12:48 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:29:5: error: stray '\243' in program
+../src/cxw.c:29:5: error: stray '\254' in program
+../src/cxw.c:29:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'dip'
+../src/cxw.c:39:20: error: 'push' undeclared (first use in this function)
+../src/cxw.c:39:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/cxw.c:42:20: error: 'dip' undeclared (first use in this function)
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+make: *** [src/cxw.o] ´íÎó 1
+10:13:26 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24064	   1152	  22628	  47844	   bae4	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:14:09 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:15:15 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:29:21: warning: unused variable 'dip' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23960	   1152	  22628	  47740	   ba7c	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:15:54 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:19:40 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:20:11 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:38:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:42:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:46:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:30:9: warning: unused variable 'psb_check' [-Wunused-variable]
+../src/cxw.c:30:6: warning: unused variable 'i' [-Wunused-variable]
+../src/cxw.c:81:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23780	   1152	  22628	  47560	   b9c8	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:20:56 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:21:58 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:38:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:42:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:46:2: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:50:3: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:51:3: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:52:3: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [enabled by default]
+In file included from ../../standalone_bsp_0/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio_l.h:93,
+                 from ../../standalone_bsp_0/ps7_cortexa9_0/include/xgpio.h:126,
+                 from ../src/cxw.c:18:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xil_printf.h:38:6: note: expected 'const char *' but argument is of type 'int'
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:68:6: warning: 'psb_check' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24012	   1152	  22628	  47792	   bab0	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:22:29 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:24:19 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:24:21 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:25:13 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:26:49 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24064	   1152	  22628	  47844	   bae4	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:27:23 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:28:18 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23996	   1152	  22628	  47776	   baa0	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:28:48 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:30:04 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:31:18 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:32:07 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:29:21: warning: unused variable 'dip' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23960	   1152	  22628	  47740	   ba7c	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:33:12 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:34:56 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23996	   1152	  22628	  47776	   baa0	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+10:35:27 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+12:54:31 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+12:56:00 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+12:56:02 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+12:56:06 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+12:57:25 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+12:58:28 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:29:21: warning: unused variable 'dip' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23960	   1152	  22628	  47740	   ba7c	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+12:59:36 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+13:56:24 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+13:56:29 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+13:57:32 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+13:58:37 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:32:6: warning: unused variable 'dat' [-Wunused-variable]
+../src/cxw.c:31:15: warning: unused variable 'Delay' [-Wunused-variable]
+../src/cxw.c:30:19: warning: unused variable 'pss_check' [-Wunused-variable]
+../src/cxw.c:29:21: warning: unused variable 'dip' [-Wunused-variable]
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23824	   1152	  22628	  47604	   b9f4	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+13:59:17 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:40:24 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 21 -
+   No IP instance named button is present in the hardware!
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 183 -
+   No IP instance named switch is present in the hardware!
+ERROR:EDK - Errors occured while parsing MSS file.
+make: *** [ps7_cortexa9_0/lib/libxil.a] ´íÎó 2
+make: ÓÉÓÚ´íÎóÄ¿±ê¡°all¡±²¢Î´ÖØÐÂ´´½¨¡£
+10:40:38 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 21 -
+   No IP instance named button is present in the hardware!
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 183 -
+   No IP instance named switch is present in the hardware!
+ERROR:EDK - Errors occured while parsing MSS file.
+make: *** [ps7_cortexa9_0/lib/libxil.a] ´íÎó 2
+make: ÓÉÓÚ´íÎóÄ¿±ê¡°all¡±²¢Î´ÖØÐÂ´´½¨¡£
+10:40:42 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 21 -
+   No IP instance named button is present in the hardware!
+ERROR:EDK - gpio -
+   D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\system.mss line 183 -
+   No IP instance named switch is present in the hardware!
+ERROR:EDK - Errors occured while parsing MSS file.
+make: *** [ps7_cortexa9_0/lib/libxil.a] ´íÎó 2
+make: ÓÉÓÚ´íÎóÄ¿±ê¡°all¡±²¢Î´ÖØÐÂ´´½¨¡£
+10:41:04 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:42:12 **** Auto Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+10:42:41 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project cxw ****
+
+Nothing to build for project cxw
+10:49:54 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+D:\solution\cxw\cxw.sdk\SDK\SDK_Export\standalone_bsp_0\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil-crt0.S:149: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [cxw.elf] ´íÎó 1
+10:55:01 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:55:3: error: 'psbcheck' undeclared (first use in this function)
+../src/cxw.c:55:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/cxw.c:62:9: error: 'i' undeclared (first use in this function)
+make: *** [src/cxw.o] ´íÎó 1
+10:55:13 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+../src/cxw.c: In function 'main':
+../src/cxw.c:62:9: error: 'i' undeclared (first use in this function)
+../src/cxw.c:62:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/cxw.o] ´íÎó 1
+11:11:00 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23856	   1136	  22628	  47620	   ba04	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+11:11:28 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+11:12:38 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23884	   1136	  22628	  47648	   ba20	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+11:12:57 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+11:15:43 **** Auto Build of configuration Debug for project cxw ****
+make all 
+'Building file: ../src/cxw.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/cxw.d" -MT"src/cxw.d" -o "src/cxw.o" "../src/cxw.c"
+'Finished building: ../src/cxw.c'
+' '
+'Building target: cxw.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "cxw.elf"  ./src/cxw.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cxw.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size cxw.elf  |tee "cxw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23884	   1136	  22628	  47648	   ba20	cxw.elf
+'Finished building: cxw.elf.size'
+' '
+11:16:05 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.
+11:17:58 **** Incremental Build of configuration Debug for project cxw ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../cxw/cxw.data/constrs_1/designprops.xml">
+      <FileInfo SFType="CompatPartsDb">
+        <Attr Name="ImportPath" Val="$PPRDIR/../finalproject1/finalproject1.data/constrs_1/designprops.xml"/>
+        <Attr Name="ImportTime" Val="1435055435"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../cxw/cxw.data/constrs_1/usercols.xml">
+      <FileInfo SFType="UserColsDb">
+        <Attr Name="ImportPath" Val="$PPRDIR/../finalproject1/finalproject1.data/constrs_1/usercols.xml"/>
+        <Attr Name="ImportTime" Val="1435055435"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/cxw/cxw.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../cxw/cxw.xdc"/>
+        <Attr Name="ImportTime" Val="1435055373"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+</DARoots>

@@ -1,0 +1,36 @@
+# ZYBO Pin Assignments
+
+set_property PACKAGE_PIN Y17 [get_ports {lcd_11bit_tri_o[10]}]
+set_property PACKAGE_PIN T17 [get_ports {lcd_11bit_tri_o[9]}]
+set_property PACKAGE_PIN U17 [get_ports {lcd_11bit_tri_o[8]}]
+
+set_property PACKAGE_PIN W14 [get_ports {lcd_11bit_tri_o[7]}]
+set_property PACKAGE_PIN Y14 [get_ports {lcd_11bit_tri_o[6]}]
+set_property PACKAGE_PIN T12 [get_ports {lcd_11bit_tri_o[5]}]
+set_property PACKAGE_PIN U12 [get_ports {lcd_11bit_tri_o[4]}]
+
+set_property PACKAGE_PIN U14 [get_ports {lcd_11bit_tri_o[3]}]
+set_property PACKAGE_PIN U15 [get_ports {lcd_11bit_tri_o[2]}]
+set_property PACKAGE_PIN V17 [get_ports {lcd_11bit_tri_o[1]}]
+set_property PACKAGE_PIN V18 [get_ports {lcd_11bit_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[8]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[9]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {lcd_11bit_tri_o[10]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports iic_scl_io]
+set_property PACKAGE_PIN W19 [get_ports iic_sda_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_sda_io]
+set_property PACKAGE_PIN W18 [get_ports iic_scl_io]
+
+set_property PACKAGE_PIN R14 [get_ports {led_2bit_tri_o[1]}]
+set_property PACKAGE_PIN T10 [get_ports {led_2bit_tri_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_2bit_tri_o[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_2bit_tri_o[0]}]

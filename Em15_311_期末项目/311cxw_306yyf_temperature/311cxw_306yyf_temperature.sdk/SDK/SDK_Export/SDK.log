@@ -1,0 +1,772 @@
+13:16:37.440 INFO  - Processing command line option -hwspec C:/xup/embedded/labs/lab1/lab1.sdk/SDK/SDK_Export/hw/system.xml. 
+13:23:13.086 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:23:13.195 INFO  - PS initialization will be done as it is not done before. 
+13:23:13.195 INFO  - Running PS initialization.... 
+13:23:13.507 INFO  - ps7_init is completed. 
+13:23:13.617 INFO  - PS Initialization is complete. 
+13:25:51.725 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:35:54.492 INFO  - Processing command line option -hwspec C:/xup/embedded/labs/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+07:35:54.738 INFO  - The hardware specification for project 'hw_platform_0' is different from C:/xup/embedded/labs/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+07:35:54.776 INFO  - Copied contents of C:/xup/embedded/labs/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+07:35:54.792 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system.bit. 
+07:35:54.990 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+07:35:55.004 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+07:35:55.053 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+07:35:55.055 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+07:35:55.068 INFO  - Copied contents of C:\xup\embedded\labs\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+07:35:55.262 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+07:35:56.677 INFO  - Updating MSS for Board Support Package Project: mem_test_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: btns_4bit, driver: gpio_v3_01_a.
+			Peripheral Instance: sw_4bit, driver: gpio_v3_01_a.
+ 
+07:36:21.342 INFO  - Updating hardware inferred compiler options for mem_test. 
+07:36:21.347 INFO  - Clearing existing target manager status. 
+07:36:23.720 INFO  - Closing and re-opening the MSS file of ther project mem_test_bsp 
+07:36:25.491 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+07:54:26.039 INFO  - FPGA configured successfully with bitstream "C:/xup/embedded/labs/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+07:54:55.017 INFO  - Processor reset is completed for ps7_cortexa9_0 
+07:54:55.117 INFO  - PS initialization will be done as it is not done before. 
+07:54:55.117 INFO  - Running PS initialization.... 
+07:54:55.275 INFO  - ps7_init is completed. 
+07:54:55.375 INFO  - ps7_post_config is completed. 
+07:54:55.475 INFO  - PS Initialization is complete. 
+08:04:35.543 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:37:41.571 INFO  - Processing command line option -hwspec D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+09:37:45.068 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+09:37:45.286 INFO  - Copied contents of D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+09:37:45.304 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+09:37:52.663 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+09:37:52.666 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+09:37:52.677 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+09:37:52.681 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+09:37:52.686 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+09:37:53.321 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:38:01.044 INFO  - Updating hardware inferred compiler options for TestApp. 
+09:38:01.198 INFO  - Clearing existing target manager status. 
+09:38:09.570 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/mem_test' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+09:38:09.572 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/mem_test_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+09:40:11.832 INFO  - FPGA configured successfully with bitstream "D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+09:41:04.552 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+09:41:04.652 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:41:04.752 INFO  - PS initialization will be done as it is not done before. 
+09:41:04.752 INFO  - Running PS initialization.... 
+09:41:06.370 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+09:42:24.050 INFO  - FPGA configured successfully with bitstream "D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+09:42:56.213 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+09:42:56.313 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:42:56.413 INFO  - PS initialization will be done as it is not done before. 
+09:42:56.413 INFO  - Running PS initialization.... 
+09:42:56.513 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+09:43:12.307 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:44:27.317 INFO  - Processing command line option -hwspec D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+09:44:30.232 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+09:44:30.266 INFO  - Copied contents of D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+09:44:30.282 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system.bit. 
+09:47:04.536 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+09:47:04.540 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+09:47:04.556 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+09:47:04.561 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+09:47:04.568 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+09:47:05.501 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:47:09.985 INFO  - Updating hardware inferred compiler options for TestApp. 
+09:47:10.040 INFO  - Clearing existing target manager status. 
+09:47:13.192 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/mem_test' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+09:47:13.193 ERROR - Unexpected error while obtaining referenced S/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/mem_test_bsp' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
+
+09:48:57.153 INFO  - FPGA configured successfully with bitstream "D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+09:49:26.451 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+09:49:26.551 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:49:26.651 INFO  - PS initialization will be done as it is not done before. 
+09:49:26.651 INFO  - Running PS initialization.... 
+09:49:28.222 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+09:50:29.485 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+09:50:29.486 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+09:58:41.830 INFO  - FPGA configured successfully with bitstream "D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+09:59:40.255 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:59:40.355 INFO  - PS initialization will be done as it is not done before. 
+09:59:40.355 INFO  - Running PS initialization.... 
+09:59:40.820 INFO  - ps7_init is completed. 
+09:59:40.920 INFO  - ps7_post_config is completed. 
+09:59:41.020 INFO  - PS Initialization is complete. 
+10:02:44.040 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:36:59.204 INFO  - Processing command line option -hwspec D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+13:37:05.101 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml. 
+13:37:05.402 INFO  - Copied contents of D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+13:37:05.432 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+13:37:11.775 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+13:37:11.778 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+13:37:11.788 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+13:37:11.791 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+13:37:11.794 INFO  - Copied contents of D:\solution\lab2\lab2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+13:37:12.269 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:39:09.216 INFO  - Updating hardware inferred compiler options for TestApp. 
+13:39:09.288 INFO  - Clearing existing target manager status. 
+13:40:43.777 INFO  - FPGA configured successfully with bitstream "D:/solution/lab2/lab2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+13:41:12.146 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:41:12.255 INFO  - PS initialization will be done as it is not done before. 
+13:41:12.256 INFO  - Running PS initialization.... 
+13:41:12.800 INFO  - ps7_init is completed. 
+13:41:12.900 INFO  - ps7_post_config is completed. 
+13:41:13.000 INFO  - PS Initialization is complete. 
+13:41:40.467 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:30:03.926 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+12:30:07.867 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+12:30:08.010 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+12:30:08.022 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+12:30:10.532 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+12:30:10.539 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+12:30:10.553 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+12:30:10.557 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+12:30:10.561 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+12:30:11.447 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:30:15.082 INFO  - Updating MSS for Board Support Package Project: standalone_bsp_0.
+		 The following driver assignments were removed:
+			Peripheral Instance: btns_4bit, driver: gpio_v3_01_a.
+		 The following new driver assignments were made:
+			Peripheral Instance: lcd_11bit, driver: gpio_v3_01_a.
+ 
+12:30:17.308 INFO  - Updating hardware inferred compiler options for TestApp. 
+12:30:17.391 INFO  - Clearing existing target manager status. 
+12:34:57.158 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:35:18.681 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:35:18.781 INFO  - PS initialization will be done as it is not done before. 
+12:35:18.781 INFO  - Running PS initialization.... 
+12:35:19.177 INFO  - ps7_init is completed. 
+12:35:19.277 INFO  - ps7_post_config is completed. 
+12:35:19.382 INFO  - PS Initialization is complete. 
+12:36:08.932 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:36:34.161 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:36:34.261 INFO  - PS initialization will be done as it is not done before. 
+12:36:34.261 INFO  - Running PS initialization.... 
+12:36:34.672 INFO  - ps7_init is completed. 
+12:36:34.772 INFO  - ps7_post_config is completed. 
+12:36:34.872 INFO  - PS Initialization is complete. 
+12:48:17.013 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:49:03.937 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:49:16.830 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:49:16.930 INFO  - PS initialization will be done as it is not done before. 
+12:49:16.930 INFO  - Running PS initialization.... 
+12:49:17.375 INFO  - ps7_init is completed. 
+12:49:17.475 INFO  - ps7_post_config is completed. 
+12:49:17.575 INFO  - PS Initialization is complete. 
+12:51:59.780 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:52:14.477 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:52:14.577 INFO  - PS initialization will be done as it is not done before. 
+12:52:14.577 INFO  - Running PS initialization.... 
+12:52:14.974 INFO  - ps7_init is completed. 
+12:52:15.075 INFO  - ps7_post_config is completed. 
+12:52:15.175 INFO  - PS Initialization is complete. 
+12:55:38.337 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+12:55:56.416 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:55:56.516 INFO  - PS initialization will be done as it is not done before. 
+12:55:56.516 INFO  - Running PS initialization.... 
+12:55:56.940 INFO  - ps7_init is completed. 
+12:55:57.040 INFO  - ps7_post_config is completed. 
+12:55:57.140 INFO  - PS Initialization is complete. 
+13:21:07.333 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+13:21:16.904 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:21:16.910 INFO  - PS initialization will be done as it is not done before. 
+13:21:16.910 INFO  - Running PS initialization.... 
+13:21:17.303 INFO  - ps7_init is completed. 
+13:21:17.403 INFO  - ps7_post_config is completed. 
+13:21:17.503 INFO  - PS Initialization is complete. 
+13:23:21.035 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:27:17.264 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+13:27:49.498 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:27:49.598 INFO  - PS initialization will be done as it is not done before. 
+13:27:49.598 INFO  - Running PS initialization.... 
+13:27:49.993 INFO  - ps7_init is completed. 
+13:27:50.093 INFO  - ps7_post_config is completed. 
+13:27:50.193 INFO  - PS Initialization is complete. 
+13:31:51.823 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+13:31:58.093 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:31:58.193 INFO  - PS initialization will be done as it is not done before. 
+13:31:58.193 INFO  - Running PS initialization.... 
+13:31:58.593 INFO  - ps7_init is completed. 
+13:31:58.698 INFO  - ps7_post_config is completed. 
+13:31:58.798 INFO  - PS Initialization is complete. 
+13:39:19.008 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+13:39:25.721 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:39:25.821 INFO  - PS initialization will be done as it is not done before. 
+13:39:25.821 INFO  - Running PS initialization.... 
+13:39:26.239 INFO  - ps7_init is completed. 
+13:39:26.339 INFO  - ps7_post_config is completed. 
+13:39:26.439 INFO  - PS Initialization is complete. 
+14:21:00.613 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+14:21:08.557 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:21:08.657 INFO  - PS initialization will be done as it is not done before. 
+14:21:08.657 INFO  - Running PS initialization.... 
+14:21:09.060 INFO  - ps7_init is completed. 
+14:21:09.160 INFO  - ps7_post_config is completed. 
+14:21:09.260 INFO  - PS Initialization is complete. 
+14:21:46.360 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+14:21:54.833 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:21:54.933 INFO  - PS initialization will be done as it is not done before. 
+14:21:54.933 INFO  - Running PS initialization.... 
+14:21:55.338 INFO  - ps7_init is completed. 
+14:21:55.438 INFO  - ps7_post_config is completed. 
+14:21:55.538 INFO  - PS Initialization is complete. 
+14:26:42.425 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+14:26:50.954 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:26:51.054 INFO  - PS initialization will be done as it is not done before. 
+14:26:51.054 INFO  - Running PS initialization.... 
+14:26:51.461 INFO  - ps7_init is completed. 
+14:26:51.561 INFO  - ps7_post_config is completed. 
+14:26:51.661 INFO  - PS Initialization is complete. 
+14:28:55.854 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+14:29:13.174 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:29:13.274 INFO  - PS initialization will be done as it is not done before. 
+14:29:13.274 INFO  - Running PS initialization.... 
+14:29:13.680 INFO  - ps7_init is completed. 
+14:29:13.780 INFO  - ps7_post_config is completed. 
+14:29:13.882 INFO  - PS Initialization is complete. 
+14:30:21.972 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:19:11.633 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+15:19:17.819 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+15:19:17.963 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+15:19:17.979 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+15:19:21.154 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+15:19:22.883 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+15:19:22.895 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+15:19:22.898 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+15:19:22.901 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+15:19:23.753 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:19:30.044 INFO  - Updating MSS for Board Support Package Project: standalone_bsp_0.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_iic_0, driver: iic_v2_08_a.
+ 
+15:19:30.938 INFO  - Updating hardware inferred compiler options for cxw. 
+15:19:31.207 INFO  - Clearing existing target manager status. 
+15:37:03.629 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+15:37:03.630 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+15:46:20.054 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+15:46:37.959 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:46:38.059 INFO  - PS initialization will be done as it is not done before. 
+15:46:38.059 INFO  - Running PS initialization.... 
+15:46:38.482 INFO  - ps7_init is completed. 
+15:46:38.582 INFO  - ps7_post_config is completed. 
+15:46:38.682 INFO  - PS Initialization is complete. 
+15:48:17.588 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+15:48:33.313 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:48:33.413 INFO  - PS initialization will be done as it is not done before. 
+15:48:33.413 INFO  - Running PS initialization.... 
+15:48:33.837 INFO  - ps7_init is completed. 
+15:48:33.937 INFO  - ps7_post_config is completed. 
+15:48:34.037 INFO  - PS Initialization is complete. 
+15:49:25.084 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+15:49:51.422 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:49:51.522 INFO  - PS initialization will be done as it is not done before. 
+15:49:51.522 INFO  - Running PS initialization.... 
+15:49:52.003 INFO  - ps7_init is completed. 
+15:49:52.103 INFO  - ps7_post_config is completed. 
+15:49:52.203 INFO  - PS Initialization is complete. 
+16:18:44.417 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+16:20:19.093 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+16:20:22.702 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+16:20:22.840 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+16:20:22.851 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+16:20:25.351 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+16:20:26.522 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+16:20:26.532 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+16:20:26.535 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+16:20:26.538 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+16:20:27.016 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+16:20:30.010 INFO  - Updating hardware inferred compiler options for cxw. 
+16:20:30.195 INFO  - Clearing existing target manager status. 
+16:27:59.922 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+16:27:59.923 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+16:38:56.172 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+16:39:18.967 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:39:19.067 INFO  - PS initialization will be done as it is not done before. 
+16:39:19.067 INFO  - Running PS initialization.... 
+16:39:19.546 INFO  - ps7_init is completed. 
+16:39:19.648 INFO  - ps7_post_config is completed. 
+16:39:19.752 INFO  - PS Initialization is complete. 
+16:42:04.955 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system.bit" 
+16:43:02.074 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:43:02.174 INFO  - PS initialization will be done as it is not done before. 
+16:43:02.174 INFO  - Running PS initialization.... 
+16:43:02.603 INFO  - ps7_init is completed. 
+16:43:02.703 INFO  - ps7_post_config is completed. 
+16:43:02.803 INFO  - PS Initialization is complete. 
+16:43:28.773 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:17:42.160 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+18:17:47.196 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+18:17:47.400 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+18:17:47.418 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+18:18:10.608 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+18:18:10.615 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+18:18:10.653 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+18:18:10.657 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+18:18:10.661 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+18:18:11.536 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+18:18:17.855 INFO  - Updating hardware inferred compiler options for cxw. 
+18:18:18.044 INFO  - Clearing existing target manager status. 
+18:19:14.785 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:20:02.292 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:20:02.392 INFO  - PS initialization will be done as it is not done before. 
+18:20:02.393 INFO  - Running PS initialization.... 
+18:20:03.005 INFO  - ps7_init is completed. 
+18:20:03.105 INFO  - ps7_post_config is completed. 
+18:20:03.205 INFO  - PS Initialization is complete. 
+18:45:56.682 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:46:14.983 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:46:15.083 INFO  - PS initialization will be done as it is not done before. 
+18:46:15.083 INFO  - Running PS initialization.... 
+18:46:15.800 INFO  - ps7_init is completed. 
+18:46:15.900 INFO  - ps7_post_config is completed. 
+18:46:16.000 INFO  - PS Initialization is complete. 
+18:47:59.361 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:54:12.969 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:54:30.305 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:54:30.405 INFO  - PS initialization will be done as it is not done before. 
+18:54:30.405 INFO  - Running PS initialization.... 
+18:54:30.882 INFO  - ps7_init is completed. 
+18:54:30.982 INFO  - ps7_post_config is completed. 
+18:54:31.082 INFO  - PS Initialization is complete. 
+18:56:10.832 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:56:28.322 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:56:28.422 INFO  - PS initialization will be done as it is not done before. 
+18:56:28.422 INFO  - Running PS initialization.... 
+18:56:29.103 INFO  - ps7_init is completed. 
+18:56:29.203 INFO  - ps7_post_config is completed. 
+18:56:29.303 INFO  - PS Initialization is complete. 
+19:20:21.865 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:21:10.767 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:21:10.771 INFO  - PS initialization will be done as it is not done before. 
+19:21:10.772 INFO  - Running PS initialization.... 
+19:21:11.301 INFO  - ps7_init is completed. 
+19:21:11.401 INFO  - ps7_post_config is completed. 
+19:21:11.501 INFO  - PS Initialization is complete. 
+19:23:50.689 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:24:20.424 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:24:20.524 INFO  - PS initialization will be done as it is not done before. 
+19:24:20.524 INFO  - Running PS initialization.... 
+19:24:21.414 INFO  - ps7_init is completed. 
+19:24:21.514 INFO  - ps7_post_config is completed. 
+19:24:21.614 INFO  - PS Initialization is complete. 
+19:28:42.564 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:29:05.201 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:29:05.301 INFO  - PS initialization will be done as it is not done before. 
+19:29:05.301 INFO  - Running PS initialization.... 
+19:29:05.825 INFO  - ps7_init is completed. 
+19:29:05.925 INFO  - ps7_post_config is completed. 
+19:29:05.932 INFO  - PS Initialization is complete. 
+19:31:29.874 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:31:45.467 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:31:45.567 INFO  - PS initialization will be done as it is not done before. 
+19:31:45.567 INFO  - Running PS initialization.... 
+19:31:46.114 INFO  - ps7_init is completed. 
+19:31:46.214 INFO  - ps7_post_config is completed. 
+19:31:46.314 INFO  - PS Initialization is complete. 
+19:36:15.828 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:36:32.422 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:36:32.522 INFO  - PS initialization will be done as it is not done before. 
+19:36:32.522 INFO  - Running PS initialization.... 
+19:36:33.021 INFO  - ps7_init is completed. 
+19:36:33.121 INFO  - ps7_post_config is completed. 
+19:36:33.221 INFO  - PS Initialization is complete. 
+19:37:32.832 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:37:50.180 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:37:50.280 INFO  - PS initialization will be done as it is not done before. 
+19:37:50.280 INFO  - Running PS initialization.... 
+19:37:50.774 INFO  - ps7_init is completed. 
+19:37:50.789 INFO  - ps7_post_config is completed. 
+19:37:50.889 INFO  - PS Initialization is complete. 
+19:39:12.914 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+19:39:28.324 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:39:28.424 INFO  - PS initialization will be done as it is not done before. 
+19:39:28.424 INFO  - Running PS initialization.... 
+19:39:28.917 INFO  - ps7_init is completed. 
+19:39:29.017 INFO  - ps7_post_config is completed. 
+19:39:29.117 INFO  - PS Initialization is complete. 
+20:30:29.243 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:12:11.199 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+11:12:17.286 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+11:12:17.435 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:12:17.446 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+11:14:20.311 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:14:21.819 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:14:21.832 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:14:21.834 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:14:21.838 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:14:22.335 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:14:26.750 INFO  - Updating hardware inferred compiler options for cxw. 
+11:14:26.816 INFO  - Clearing existing target manager status. 
+11:25:40.560 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+11:26:10.214 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:26:10.314 INFO  - PS initialization will be done as it is not done before. 
+11:26:10.315 INFO  - Running PS initialization.... 
+11:26:10.746 INFO  - ps7_init is completed. 
+11:26:10.847 INFO  - ps7_post_config is completed. 
+11:26:10.947 INFO  - PS Initialization is complete. 
+11:31:17.662 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+11:31:33.795 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:31:33.895 INFO  - PS initialization will be done as it is not done before. 
+11:31:33.895 INFO  - Running PS initialization.... 
+11:31:34.610 INFO  - ps7_init is completed. 
+11:31:34.710 INFO  - ps7_post_config is completed. 
+11:31:34.810 INFO  - PS Initialization is complete. 
+11:33:15.335 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+11:33:29.514 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:33:29.614 INFO  - PS initialization will be done as it is not done before. 
+11:33:29.614 INFO  - Running PS initialization.... 
+11:33:30.104 INFO  - ps7_init is completed. 
+11:33:30.204 INFO  - ps7_post_config is completed. 
+11:33:30.304 INFO  - PS Initialization is complete. 
+11:38:35.618 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+11:38:50.262 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:38:50.362 INFO  - PS initialization will be done as it is not done before. 
+11:38:50.362 INFO  - Running PS initialization.... 
+11:38:51.148 INFO  - ps7_init is completed. 
+11:38:51.248 INFO  - ps7_post_config is completed. 
+11:38:51.348 INFO  - PS Initialization is complete. 
+12:00:55.275 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:02:57.913 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:02:58.013 INFO  - PS initialization will be done as it is not done before. 
+12:02:58.013 INFO  - Running PS initialization.... 
+12:02:58.458 INFO  - ps7_init is completed. 
+12:02:58.558 INFO  - ps7_post_config is completed. 
+12:02:58.658 INFO  - PS Initialization is complete. 
+12:04:16.170 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:04:31.013 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:04:31.113 INFO  - PS initialization will be done as it is not done before. 
+12:04:31.113 INFO  - Running PS initialization.... 
+12:04:31.535 INFO  - ps7_init is completed. 
+12:04:31.635 INFO  - ps7_post_config is completed. 
+12:04:31.735 INFO  - PS Initialization is complete. 
+12:05:42.656 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:06:05.813 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:06:05.913 INFO  - PS initialization will be done as it is not done before. 
+12:06:05.913 INFO  - Running PS initialization.... 
+12:06:06.331 INFO  - ps7_init is completed. 
+12:06:06.431 INFO  - ps7_post_config is completed. 
+12:06:06.438 INFO  - PS Initialization is complete. 
+16:28:25.310 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:28:51.123 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:28:51.128 INFO  - PS initialization will be done as it is not done before. 
+16:28:51.128 INFO  - Running PS initialization.... 
+16:28:51.722 INFO  - ps7_init is completed. 
+16:28:51.822 INFO  - ps7_post_config is completed. 
+16:28:51.922 INFO  - PS Initialization is complete. 
+16:38:06.008 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:38:19.800 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:38:19.900 INFO  - PS initialization will be done as it is not done before. 
+16:38:19.900 INFO  - Running PS initialization.... 
+16:38:20.330 INFO  - ps7_init is completed. 
+16:38:20.430 INFO  - ps7_post_config is completed. 
+16:38:20.531 INFO  - PS Initialization is complete. 
+16:42:01.394 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:42:25.870 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:42:25.970 INFO  - PS initialization will be done as it is not done before. 
+16:42:25.970 INFO  - Running PS initialization.... 
+16:42:26.711 INFO  - ps7_init is completed. 
+16:42:26.811 INFO  - ps7_post_config is completed. 
+16:42:26.911 INFO  - PS Initialization is complete. 
+16:53:42.243 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:54:38.628 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:54:38.728 INFO  - PS initialization will be done as it is not done before. 
+16:54:38.729 INFO  - Running PS initialization.... 
+16:54:39.215 INFO  - ps7_init is completed. 
+16:54:39.315 INFO  - ps7_post_config is completed. 
+16:54:39.415 INFO  - PS Initialization is complete. 
+16:56:17.518 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:56:51.242 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:56:51.247 INFO  - PS initialization will be done as it is not done before. 
+16:56:51.247 INFO  - Running PS initialization.... 
+16:56:51.724 INFO  - ps7_init is completed. 
+16:56:51.826 INFO  - ps7_post_config is completed. 
+16:56:51.926 INFO  - PS Initialization is complete. 
+16:58:25.374 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+16:58:38.591 INFO  - Processor reset is completed for ps7_cortexa9_0 
+16:58:38.691 INFO  - PS initialization will be done as it is not done before. 
+16:58:38.691 INFO  - Running PS initialization.... 
+16:58:39.190 INFO  - ps7_init is completed. 
+16:58:39.290 INFO  - ps7_post_config is completed. 
+16:58:39.390 INFO  - PS Initialization is complete. 
+17:01:31.173 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:01:44.721 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:01:44.821 INFO  - PS initialization will be done as it is not done before. 
+17:01:44.821 INFO  - Running PS initialization.... 
+17:01:45.267 INFO  - ps7_init is completed. 
+17:01:45.367 INFO  - ps7_post_config is completed. 
+17:01:45.467 INFO  - PS Initialization is complete. 
+17:03:42.192 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:04:06.190 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:04:06.290 INFO  - PS initialization will be done as it is not done before. 
+17:04:06.290 INFO  - Running PS initialization.... 
+17:04:06.729 INFO  - ps7_init is completed. 
+17:04:06.829 INFO  - ps7_post_config is completed. 
+17:04:06.836 INFO  - PS Initialization is complete. 
+17:16:40.853 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:17:10.302 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:17:10.402 INFO  - PS initialization will be done as it is not done before. 
+17:17:10.402 INFO  - Running PS initialization.... 
+17:17:10.881 INFO  - ps7_init is completed. 
+17:17:10.981 INFO  - ps7_post_config is completed. 
+17:17:11.081 INFO  - PS Initialization is complete. 
+17:21:34.439 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:21:49.084 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:22:05.245 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:22:21.680 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:22:46.602 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:23:03.563 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:23:06.590 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+17:23:20.501 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:23:41.015 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+17:23:53.603 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:25:52.592 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+17:25:55.919 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+17:25:56.096 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+17:25:56.113 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+17:25:59.015 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+17:25:59.020 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+17:25:59.033 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+17:25:59.036 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+17:25:59.039 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+17:25:59.932 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:26:05.880 INFO  - Updating hardware inferred compiler options for cxw. 
+17:26:06.127 INFO  - Clearing existing target manager status. 
+17:26:55.371 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:28:02.259 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:28:02.359 INFO  - PS initialization will be done as it is not done before. 
+17:28:02.359 INFO  - Running PS initialization.... 
+17:28:02.825 INFO  - ps7_init is completed. 
+17:28:02.925 INFO  - ps7_post_config is completed. 
+17:28:03.025 INFO  - PS Initialization is complete. 
+17:34:20.393 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:34:38.638 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:34:38.738 INFO  - PS initialization will be done as it is not done before. 
+17:34:38.738 INFO  - Running PS initialization.... 
+17:34:39.212 INFO  - ps7_init is completed. 
+17:34:39.312 INFO  - ps7_post_config is completed. 
+17:34:39.412 INFO  - PS Initialization is complete. 
+17:37:18.474 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:38:25.600 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:44:40.880 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:44:57.129 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:44:57.229 INFO  - PS initialization will be done as it is not done before. 
+17:44:57.229 INFO  - Running PS initialization.... 
+17:44:57.820 INFO  - ps7_init is completed. 
+17:44:57.920 INFO  - ps7_post_config is completed. 
+17:44:58.020 INFO  - PS Initialization is complete. 
+17:49:52.520 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:52:09.247 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:54:25.102 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:04:34.797 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:07:53.251 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:08:44.291 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:08:58.113 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:08:58.213 INFO  - PS initialization will be done as it is not done before. 
+18:08:58.213 INFO  - Running PS initialization.... 
+18:08:58.711 INFO  - ps7_init is completed. 
+18:08:58.735 INFO  - ps7_post_config is completed. 
+18:08:58.835 INFO  - PS Initialization is complete. 
+18:10:15.014 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:12:51.223 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:16:43.064 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:17:42.927 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:18:40.838 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:21:04.068 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:47:48.332 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+19:47:48.496 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:52:13.994 INFO  - Processing command line option -hwspec D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+11:52:17.272 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml. 
+11:52:17.461 INFO  - Copied contents of D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+11:52:17.472 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+11:52:30.641 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+11:52:30.644 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+11:52:30.655 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+11:52:30.659 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+11:52:30.663 INFO  - Copied contents of D:\solution\cxw2\cxw2.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+11:52:31.126 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:52:35.352 INFO  - Updating MSS for Board Support Package Project: standalone_bsp_0.
+		 The following driver assignments were removed:
+			Peripheral Instance: sw_4bit, driver: gpio_v3_01_a.
+		 The following new driver assignments were made:
+			Peripheral Instance: led_2bit, driver: gpio_v3_01_a.
+ 
+11:54:07.612 INFO  - Updating hardware inferred compiler options for cxw. 
+11:54:08.106 INFO  - Clearing existing target manager status. 
+12:40:12.006 INFO  - Project standalone_bsp_0 was a BSP project. Please update references. 
+12:40:12.006 ERROR - SDK has detected that project standalone_bsp_0 has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+17:08:37.040 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:09:00.394 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:09:00.494 INFO  - PS initialization will be done as it is not done before. 
+17:09:00.494 INFO  - Running PS initialization.... 
+17:09:01.057 INFO  - ps7_init is completed. 
+17:09:01.157 INFO  - ps7_post_config is completed. 
+17:09:01.257 INFO  - PS Initialization is complete. 
+17:13:58.292 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:14:33.344 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:17:01.402 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:17:26.904 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:17:27.004 INFO  - PS initialization will be done as it is not done before. 
+17:17:27.004 INFO  - Running PS initialization.... 
+17:17:27.474 INFO  - ps7_init is completed. 
+17:17:27.574 INFO  - ps7_post_config is completed. 
+17:17:27.674 INFO  - PS Initialization is complete. 
+17:28:24.814 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:28:46.549 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:28:46.649 INFO  - PS initialization will be done as it is not done before. 
+17:28:46.649 INFO  - Running PS initialization.... 
+17:28:47.118 INFO  - ps7_init is completed. 
+17:28:47.218 INFO  - ps7_post_config is completed. 
+17:28:47.318 INFO  - PS Initialization is complete. 
+17:30:00.286 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:30:18.293 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:30:18.298 INFO  - PS initialization will be done as it is not done before. 
+17:30:18.299 INFO  - Running PS initialization.... 
+17:30:18.774 INFO  - ps7_init is completed. 
+17:30:18.874 INFO  - ps7_post_config is completed. 
+17:30:18.974 INFO  - PS Initialization is complete. 
+17:34:52.901 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:35:09.263 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:35:09.364 INFO  - PS initialization will be done as it is not done before. 
+17:35:09.365 INFO  - Running PS initialization.... 
+17:35:10.105 INFO  - ps7_init is completed. 
+17:35:10.205 INFO  - ps7_post_config is completed. 
+17:35:10.305 INFO  - PS Initialization is complete. 
+17:36:01.213 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:36:17.849 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:36:17.949 INFO  - PS initialization will be done as it is not done before. 
+17:36:17.949 INFO  - Running PS initialization.... 
+17:36:18.438 INFO  - ps7_init is completed. 
+17:36:18.538 INFO  - ps7_post_config is completed. 
+17:36:18.638 INFO  - PS Initialization is complete. 
+17:38:05.845 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:38:21.808 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:38:21.908 INFO  - PS initialization will be done as it is not done before. 
+17:38:21.908 INFO  - Running PS initialization.... 
+17:38:22.392 INFO  - ps7_init is completed. 
+17:38:22.492 INFO  - ps7_post_config is completed. 
+17:38:22.500 INFO  - PS Initialization is complete. 
+17:39:49.500 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:40:05.188 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:40:05.288 INFO  - PS initialization will be done as it is not done before. 
+17:40:05.288 INFO  - Running PS initialization.... 
+17:40:05.782 INFO  - ps7_init is completed. 
+17:40:05.882 INFO  - ps7_post_config is completed. 
+17:40:05.982 INFO  - PS Initialization is complete. 
+17:45:26.224 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+17:47:03.437 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:47:03.537 INFO  - PS initialization will be done as it is not done before. 
+17:47:03.538 INFO  - Running PS initialization.... 
+17:47:04.050 INFO  - ps7_init is completed. 
+17:47:04.150 INFO  - ps7_post_config is completed. 
+17:47:04.250 INFO  - PS Initialization is complete. 
+18:27:16.411 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:27:38.427 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:27:38.527 INFO  - PS initialization will be done as it is not done before. 
+18:27:38.527 INFO  - Running PS initialization.... 
+18:27:39.217 INFO  - ps7_init is completed. 
+18:27:39.317 INFO  - ps7_post_config is completed. 
+18:27:39.417 INFO  - PS Initialization is complete. 
+18:37:21.481 INFO  - FPGA configured successfully with bitstream "D:/solution/cxw2/cxw2.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+18:37:53.300 INFO  - Processor reset is completed for ps7_cortexa9_0 
+18:37:53.400 INFO  - PS initialization will be done as it is not done before. 
+18:37:53.400 INFO  - Running PS initialization.... 
+18:37:54.160 INFO  - ps7_init is completed. 
+18:37:54.260 INFO  - ps7_post_config is completed. 
+18:37:54.360 INFO  - PS Initialization is complete. 
+21:41:17.907 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:04:58.658 INFO  - Processing command line option -hwspec D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw/system.xml. 
+12:05:02.715 INFO  - The hardware specification for project 'hw_platform_0' is different from D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw/system.xml. 
+12:05:02.888 INFO  - Copied contents of D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+12:05:02.898 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\system_wrapper.bit into \hw_platform_0\system_wrapper.bit. 
+12:05:09.786 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+12:05:09.790 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+12:05:09.802 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+12:05:09.805 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+12:05:09.810 INFO  - Copied contents of D:\solution\311cxw_306yyf_temperature\311cxw_306yyf_temperature.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+12:05:10.326 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:05:15.083 INFO  - Updating hardware inferred compiler options for cxw. 
+12:05:15.280 INFO  - Clearing existing target manager status. 
+12:05:49.093 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:06:22.571 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:06:22.671 INFO  - PS initialization will be done as it is not done before. 
+12:06:22.671 INFO  - Running PS initialization.... 
+12:06:23.093 INFO  - ps7_init is completed. 
+12:06:23.193 INFO  - ps7_post_config is completed. 
+12:06:23.293 INFO  - PS Initialization is complete. 
+12:11:24.872 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:11:42.075 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:11:42.175 INFO  - PS initialization will be done as it is not done before. 
+12:11:42.175 INFO  - Running PS initialization.... 
+12:11:42.589 INFO  - ps7_init is completed. 
+12:11:42.689 INFO  - ps7_post_config is completed. 
+12:11:42.789 INFO  - PS Initialization is complete. 
+12:13:37.101 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:13:51.792 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:13:51.798 INFO  - PS initialization will be done as it is not done before. 
+12:13:51.798 INFO  - Running PS initialization.... 
+12:13:52.236 INFO  - ps7_init is completed. 
+12:13:52.335 INFO  - ps7_post_config is completed. 
+12:13:52.435 INFO  - PS Initialization is complete. 
+12:14:47.701 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:15:03.182 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:15:03.282 INFO  - PS initialization will be done as it is not done before. 
+12:15:03.282 INFO  - Running PS initialization.... 
+12:15:03.720 INFO  - ps7_init is completed. 
+12:15:03.820 INFO  - ps7_post_config is completed. 
+12:15:03.920 INFO  - PS Initialization is complete. 
+12:15:58.041 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:17:17.252 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:17:31.998 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:18:31.321 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:18:45.247 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:18:45.347 INFO  - PS initialization will be done as it is not done before. 
+12:18:45.347 INFO  - Running PS initialization.... 
+12:18:45.764 INFO  - ps7_init is completed. 
+12:18:45.864 INFO  - ps7_post_config is completed. 
+12:18:45.871 INFO  - PS Initialization is complete. 
+12:19:59.895 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:20:15.226 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:20:15.326 INFO  - PS initialization will be done as it is not done before. 
+12:20:15.326 INFO  - Running PS initialization.... 
+12:20:15.815 INFO  - ps7_init is completed. 
+12:20:15.914 INFO  - ps7_post_config is completed. 
+12:20:16.014 INFO  - PS Initialization is complete. 
+12:22:25.992 INFO  - FPGA configured successfully with bitstream "D:/solution/311cxw_306yyf_temperature/311cxw_306yyf_temperature.sdk/SDK/SDK_Export/hw_platform_0/system_wrapper.bit" 
+12:22:42.978 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:22:43.078 INFO  - PS initialization will be done as it is not done before. 
+12:22:43.078 INFO  - Running PS initialization.... 
+12:22:43.495 INFO  - ps7_init is completed. 
+12:22:43.595 INFO  - ps7_post_config is completed. 
+12:22:43.695 INFO  - PS Initialization is complete. 
+12:37:07.072 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

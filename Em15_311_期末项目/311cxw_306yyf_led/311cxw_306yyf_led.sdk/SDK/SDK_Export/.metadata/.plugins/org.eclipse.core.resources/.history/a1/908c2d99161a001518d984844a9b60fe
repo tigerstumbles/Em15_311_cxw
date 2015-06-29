@@ -1,0 +1,80 @@
+/*
+ * cxw.c
+ *
+ *  Created on: 2015-6-24
+ *      Author: suoni
+ */
+
+
+/*
+ * cxw.c
+ *
+ *  Created on: 2015-6-23
+ *      Author: suoni
+ */
+
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xutil.h"
+
+#define LED_DELAY     1000000000
+
+
+//====================================================
+
+int main (void)
+{
+
+    XGpio led, push£¬dip;
+	int i, psb_check,pss_check;
+	volatile int Delay;
+	int dat = 0x01;
+
+    xil_printf("-- Start of the Program --\r\n");
+
+    XGpio_Initialize(&led, XPAR_LED_DEVICE_ID);
+	XGpio_SetDataDirection(&led, 1, 0x00000000);
+
+	XGpio_Initialize(&push, XPAR_BUTTON_DEVICE_ID);
+	XGpio_SetDataDirection(&push, 1, 0xffffffff);
+
+	XGpio_Initialize(&dip, XPAR_SWITCH_DEVICE_ID);
+		XGpio_SetDataDirection(&dip, 1, 0xffffffff);
+
+	while (1)
+	{
+	  psb_check = XGpio_DiscreteRead(&push, 1);
+	  xil_printf("Push Buttons Status %x\r\n", psb_check);
+	  pss_check = XGpio_DiscreteRead(&dip, 1);
+	  	  xil_printf("Push Buttons Status %x\r\n", pss_check);
+
+	  /*while (1) {
+	              for(i=0;i<4;i++){
+	              XGpio_DiscreteWrite(&led, 1 , dat);
+	              for (Delay = 0; Delay < LED_DELAY; Delay++);
+	              dat = dat <<1;
+	              }
+	              dat = 0x01;
+	          }*/
+
+
+	  if(psb_check==0)
+	  		  XGpio_DiscreteWrite(&led, 1,0);
+
+	  if(psb_check==1)
+		  XGpio_DiscreteWrite(&led, 1,1);
+	  if(psb_check==2)
+	  		  XGpio_DiscreteWrite(&led, 1,2);
+	  if(psb_check==4)
+	  	  	 XGpio_DiscreteWrite(&led, 1,4);
+	  if(psb_check==8)
+	  	  	 XGpio_DiscreteWrite(&led, 1,8);
+
+
+	  for (i=0; i<9999999; i++);
+	}
+
+}
+
+
